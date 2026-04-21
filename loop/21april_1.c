@@ -121,4 +121,18 @@ int main()
 input  : 10 
 output  : even number  sum  : 2+4+6+8+10 =30 
           odd number  sum  : 1+3+5+7+9  = 25
-*/
+        evensum =0, oddsum = 0 
+        for(i=1; i<=n;i++)
+        {
+            if()
+            {
+
+            }
+            else 
+            {
+
+            }        
+        }
+        printf("even sum is : %d\n",evensum);
+        printf("odd sum is : %d\n",oddsum);
+          */
