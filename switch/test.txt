@@ -1,0 +1,53 @@
+QUE  :1 
+
+Hotel Stay Price Calculator
+    Problem Statement
+
+A hotel offers two types of rooms:
+    1.Studio
+    2.Apartment
+
+Write a program that calculates the total cost of stay based on:
+
+    1.Type of room
+    2.Month of stay
+    3.Number of nights
+
+| Month                | Studio Price | Apartment Price |
+| -------------------- | ------------ | --------------- |
+| January – April      | $50          | $60             |
+| May – August         | $70          | $80             |
+| September – December | $80          | $90             |
+
+==>Discounts
+1.Studio Discounts
+a.January – April
+    More than 3 nights → 20% discount
+    More than 7 nights → 30% discount
+b.May – August
+    More than 3 nights → 10% discount
+    More than 7 nights → 20% discount
+c.September – December
+    More than 3 nights → 5% discount
+    More than 7 nights → 10% discount
+2.Apartment Discounts
+    For any month:
+    More than 7 nights → 10% discount
+Input:
+The program should read:
+
+Month of stay (string)
+Number of nights (integer, up to 30 days)
+Output:
+Display:
+
+    Total cost for Studio (after discount)
+    Total cost for Apartment (after discount)
+🧾 Example
+Input:
+    Month: May
+    Nights: 5
+Output:
+    Studio Rent for 5 nights: $315
+    Apartment Rent for 5 nights: $400
+    
