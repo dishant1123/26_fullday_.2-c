@@ -122,3 +122,75 @@ int  main()
     
     100 factors  1 2 4 5 10 20 25 50  ===> 117   ==> not  perfect   
 */
+/*
+#include <stdio.h>
+int  main()
+{
+    int n,i,sum =0; 
+    printf("enter the num : ");
+    scanf("%d",&n);   // 6 
+
+    for(i=1; i<n; i++) // 7  7 <=6 
+    {
+        if(n % i==0)  // 6 % 6  ==0 
+        {
+                sum =sum +i; 
+        }
+    }
+    if(sum ==n)
+    {
+        printf("perfect number \n");
+    }
+    else 
+    {
+        printf("not perfect number \n");
+    }
+    return 0; 
+}
+*/
+
+// armstrong  number  : 
+/*
+    153 : 3 digit 
+    cube  :  1*1*1   5 *5*5   3*3*3 
+               1      125      27 
+    sum = 1+125 +27 = 153  ==> amg  
+
+    370 : 3 digit   ===> 27+343 +0  ==> 370   ==> amg 
+    371 : amg  
+
+step :
+
+1. r =num  % 10    //  r = %10 =1 
+2. cube = r*r*r    // cube  = 1   
+3. sum = sum +cube  // sum = 153  
+4. num = num /10    //  num =1 /10 =0 
+*/
+
+#include <stdio.h>
+int main()
+{
+    int n,r,cube=1,temp,sum=0;
+    printf("enter the num : ");
+    scanf("%d",&n);
+    temp =n;   
+    for(; n >0 ;)  // 0 > 0 
+    {
+        r= n %10;  // r = 1
+        cube = r*r*r; // cube =1  
+        sum = sum +cube; // sum =153  
+        n = n/10; // n = 0  
+    }
+    if(sum ==temp) // 153  == 153 
+    {
+        printf("amg number \n");
+    }
+    else 
+    {
+        printf("not amg number \n");
+    }
+    return 0; 
+}
+/*
+
+*/
