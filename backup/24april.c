@@ -221,7 +221,7 @@ int main()
 }
 */ 
 // nested if : 
-
+/*
 #include <stdio.h>
 int  main()
 {
@@ -247,5 +247,37 @@ int  main()
     }
     return 0;
 }
+*/
 
 // task : 2 ask user to enter the  number  and check  whether it is  divisible  by 5 or 11 or both .   input  : 55   ==> num is divisible by both 5 and 11 
+
+// grade system :
+/*
+
+90 +        A+ 
+80-90       A
+70-80       B+
+60-70       B
+50-60       C+
+40-50       C
+below 40    Fail
+*/
+
+#include <stdio.h>
+int main()
+{
+    int phy,che,maths,total =0; 
+    float per; 
+    printf("enter the  phy marks : ");
+    scanf("%d",&phy);
+    printf("enter the  maths marks : ");
+    scanf("%d",&maths);
+    printf("enter the  che marks : ");
+    scanf("%d",&che);
+
+    total = phy + maths + che;
+    per = total /3;   // per = total *100 /300
+    printf("total is %d\n",total);
+    printf("per is %f\n",per);
+    return 0 ;
+}
