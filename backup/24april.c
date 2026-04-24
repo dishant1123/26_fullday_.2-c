@@ -115,7 +115,7 @@ int  main()
 */
 
 // task :1  ask user to  enter the  number  and check it odd or even.
-
+/*
 #include <stdio.h>
 int  main()
 {
@@ -133,8 +133,119 @@ int  main()
     }
     return 0 ;
 }
-
+*/ 
 // task  :2  ask user  to enter the year  and check it is leap year or not.
 
+// nested  if : 
+/*
+    if(con)
+        statement
+    else if(con)
+        statement
+    else 
+        statement
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int a,b; 
+    printf("enter two numbers\n");
+    scanf("%d%d",&a,&b);
 
+    if(a>b)
+    {
+        printf("a is greater than b\n");
+    }
+    else if(b>a)
+    {
+        printf("b is greater than a\n");
+    }
+    else 
+    {
+        printf("same"); 
+    }
+    return 0;
+}
+*/ 
+// ladder if : 
+/*
+if(con)
+    if(con)
+        statement
+    else 
+        statement
+else if (con)
+    if(con)
+        statement
+    else
+        statements 
+*/  
 
+// ask user to enter the  three num and check which one is  big . 
+/*
+#include <stdio.h>
+int main()
+{
+    int a,b,c; 
+    printf("enter three numbers\n");
+    scanf("%d%d%d",&a,&b,&c);  // a=9  b=7  c=67 
+
+    if(a>b)  // 9 > 7
+    {
+        if(a>c) // 9 > 67 
+        {
+            printf("a is the biggest\n");
+        }
+        else 
+        {
+            printf("c is the biggest\n");
+        }
+    }
+    else if(b>c)  // 78 >67 
+    {
+        if(b>a)  // 78 >9 
+        {
+            printf("b is the biggest\n");
+        }
+        else 
+        {
+            printf("c is the biggest\n");
+        }
+    }
+    else 
+    {
+        printf("equal\n");
+    }
+    return 0; 
+}
+*/ 
+// nested if : 
+
+#include <stdio.h>
+int  main()
+{
+    int a,b,c; 
+    printf("enter three numbers\n");
+    scanf("%d%d%d",&a,&b,&c);  // a=9  b=7  c=67
+
+    if(a>b  && a>c)
+    {
+        printf("a is the biggest\n");
+    }
+    else if(b>a  && b>c)
+    {
+        printf("b is the biggest\n");
+    }
+    else if(c>a  && c>b)
+    {
+        printf("c is the biggest\n");
+    }
+    else 
+    {
+        printf("equal\n");
+    }
+    return 0;
+}
+
+// task : 2 ask user to enter the  number  and check  whether it is  divisible  by 5 or 11 or both .   input  : 55   ==> num is divisible by both 5 and 11 
