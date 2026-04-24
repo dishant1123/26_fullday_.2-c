@@ -78,4 +78,9 @@ ask user to enter the  number  and  print  the  sum  of  first  digit  and last 
 input : 1345 
 ouput : sum  of first  digit and last  digit is  : 1+5 =6
 
+hint  : 
+
+last :  num %10 
+first  : num /10   ==>  num >10 
+
 */
