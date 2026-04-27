@@ -157,12 +157,13 @@ nested switch :
 #include <stdio.h>
 int main()
 {
-    int choice, subchoice,qty,price,total;
-    printf("1.FRUITS\n");
-    printf("2.VEGETABLES\n");
-
-    printf("Enter your choice: ");
-    scanf("%d", &choice);
+    int choice, subchoice,qty,price,total,grand_total;
+    char ch; 
+start :
+        printf("1.FRUITS\n");
+        printf("2.VEGETABLES\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
     switch(choice)
     {
@@ -178,28 +179,39 @@ int main()
                 case 1 : 
                     printf("you have selected apple\n");
                     printf("price = 100\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 100;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 100;
+                    // printf("total =  %d\n", total);
+                    price =100; 
                     break;
                 case 2 : 
                     printf("you have selected banana\n");
                     printf("price = 20\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 20;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 20;
+                    // printf("total =  %d\n", total);
+                    price =20; 
                     break;
                 case 3 :
                     printf("you have selected orange\n");
                     printf("price = 90\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 90;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 90;
+                    // printf("total =  %d\n", total);
+                    price =90; 
                     break;
+                    default  : 
+                        printf("invalid choice\n");
+                        break;
+                goto start;
             }
+            printf("enter the  qty  : "); 
+            scanf("%d", &qty);
+            total  = qty * price;
+            grand_total += total *qty;
             break;
         case 2 :
             printf("you have selected vegetables\n");
@@ -213,32 +225,54 @@ int main()
                 case 1: 
                     printf("you have selected carrot\n");
                     printf("price = 50\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 50;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 50;
+                    // printf("total =  %d\n", total);
+                    price =50;
                     break;
                 case 2: 
                     printf("you have selected potato\n");
                     printf("price = 30\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 30;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 30;
+                    // printf("total =  %d\n", total);
+                    price =30;
                     break;
                 case 3: 
                     printf("you have selected tomato\n");
                     printf("price = 80\n");
-                    printf("enter the  quantity : ");
-                    scanf("%d", &qty);
-                    total  = qty * 80;
-                    printf("total =  %d\n", total);
+                    // printf("enter the  quantity : ");
+                    // scanf("%d", &qty);
+                    // total  = qty * 80;
+                    // printf("total =  %d\n", total);
+                    price =80;
                     break;
+            default : 
+                    printf("invalid choice\n");
+                    break;
+                goto start;
             }
-        break;
+            printf("enter the  qty  : ");
+            scanf("%d", &qty);
+            total  = qty * price;
+            grand_total += total *qty;
+            break;
+        
             default : 
                 printf("invalid choice\n");
-                break;
-    } // outer switch  end 
+                goto start;
+       
+    }    
+        printf("do you  want to continue  (y/n) : ");
+        scanf(" %c", &ch);
+        if(ch =='y' || ch =='Y')
+        {
+            goto start;
+        }
+        printf("thanks for using our shop\n");
+        printf("your grand total is : %d\n", grand_total);
+     // outer switch  end 
     return 0; 
 }
