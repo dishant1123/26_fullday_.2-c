@@ -85,7 +85,7 @@ syntax :
 */
 
 // ex :1 
-
+/*
 #include <stdio.h>
 int  main()
 {
@@ -126,7 +126,7 @@ int  main()
     }
     return 0; 
 }
-
+*/
 /*
 task :2  ask user to enter the  number and  print  month name  and  its days. but  if user enter a number 2 then  ask user to enter the  year and check if  it is leap year then print 29 days  not  then 28 days. 
 
@@ -137,4 +137,108 @@ input  : 1   ==> jan   ==>31 days
          hint  : 
             case 2 : 
                 printf()   scanf()   if  ()   else   
+
+
+leap  year :   every  year   : 
+                 if((year % 4==0  && year % 100 !=0 ) || (year % 400 ==0)) 
+                {
+                     1920  ===> leap yr  ??? 
+                     1920 % 4==0  && 1920 % 100 !=0 
+                     1864   ===> 
+                } 
+
+
 */
+/*
+nested switch : 
+
+*/
+
+#include <stdio.h>
+int main()
+{
+    int choice, subchoice,qty,price,total;
+    printf("1.FRUITS\n");
+    printf("2.VEGETABLES\n");
+
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice)
+    {
+        case 1 : 
+            printf("you have selected fruits\n");
+            printf("1.APPLE     : rs 100\n");
+            printf("2.BANANA    : rs 20\n");
+            printf("3.ORANGE    : rs 90\n");
+            printf("enter the subhoice : "); 
+            scanf("%d", &subchoice);
+            switch(subchoice)
+            {
+                case 1 : 
+                    printf("you have selected apple\n");
+                    printf("price = 100\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 100;
+                    printf("total =  %d\n", total);
+                    break;
+                case 2 : 
+                    printf("you have selected banana\n");
+                    printf("price = 20\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 20;
+                    printf("total =  %d\n", total);
+                    break;
+                case 3 :
+                    printf("you have selected orange\n");
+                    printf("price = 90\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 90;
+                    printf("total =  %d\n", total);
+                    break;
+            }
+            break;
+        case 2 :
+            printf("you have selected vegetables\n");
+            printf("1.CARROT    : rs 50\n");
+            printf("2.POTATO    : rs 30\n");
+            printf("3.Tomato    : rs 80\n");
+            printf("enter the subchoice : ");
+            scanf("%d", &subchoice);
+            switch(subchoice)
+            {
+                case 1: 
+                    printf("you have selected carrot\n");
+                    printf("price = 50\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 50;
+                    printf("total =  %d\n", total);
+                    break;
+                case 2: 
+                    printf("you have selected potato\n");
+                    printf("price = 30\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 30;
+                    printf("total =  %d\n", total);
+                    break;
+                case 3: 
+                    printf("you have selected tomato\n");
+                    printf("price = 80\n");
+                    printf("enter the  quantity : ");
+                    scanf("%d", &qty);
+                    total  = qty * 80;
+                    printf("total =  %d\n", total);
+                    break;
+            }
+        break;
+            default : 
+                printf("invalid choice\n");
+                break;
+    } // outer switch  end 
+    return 0; 
+}
