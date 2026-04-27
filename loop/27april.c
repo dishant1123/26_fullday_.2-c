@@ -68,6 +68,8 @@ task  :2  ask user to enter the  start  and  ending  number  and  print  prime  
 input  start  : 20 
 input   end   : 100    23 ,29 .. 97 
 */
+
+/*
 #include <stdio.h>
 int main()
 {
@@ -95,7 +97,7 @@ int main()
         printf("\ntotal prime  number  between range  : %d\n",temp);
     return 0 ;
 }
-
+*/ 
 /*
 perfect number  in range : 
 amg number in range  
@@ -105,3 +107,41 @@ strong  number  in range
 harshard  number  in range
 reverse  number  in range
 */
+
+// amg in range  : 
+
+#include <stdio.h>
+#include <math.h>
+int  main()
+{
+    long int start ,end, temp ,i,r, count ,sum ;
+    printf("enter the start number : ");
+    scanf("%ld",&start); // 100
+    printf("enter the end number : ");
+    scanf("%ld",&end); // 100000
+
+    for(i=start; i<=end; i++) // i=100 ; i<=100000
+    {
+        count =0 ;
+        temp = i;
+
+        for(; temp >0;) // 0 > 0 
+        {
+            temp =  temp /10;  // temp  = 1 /10  =0 
+            count ++;    // 3 
+        }
+        temp =i; 
+        sum =0 ;  
+        for(; temp > 0; )
+        {
+            r=  temp %10 ; 
+            sum =sum + pow(r,count); 
+            temp = temp /10 ; 
+        }
+        if(sum ==i)
+        {
+            printf("%ld\t",i);
+        }
+    } 
+    return 0 ;
+}
