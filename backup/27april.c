@@ -67,3 +67,74 @@ user =275
 
 
 */
+
+/*
+switch  :  menu driven  program 
+
+syntax : 
+    switch(expression)
+    {
+        case  value :
+            statement(s);
+            break;
+        default :
+            statement(s);
+            break;
+    }
+    
+*/
+
+// ex :1 
+
+#include <stdio.h>
+int  main()
+{
+    int a,b,choice; 
+    printf("enter the value of a\n");
+    scanf("%d", &a);
+    printf("enter the value of b\n");
+    scanf("%d", &b);
+
+    printf("CALCULATOR\n");
+    printf("1.addition\n");
+    printf("2.subtraction\n");
+    printf("3.multiplication\n");
+    printf("4.division\n");
+    printf("5.modulas\n");
+    printf("enter your choice\n");
+    scanf("%d", &choice);
+
+    switch(choice)
+    {
+        case 1 : 
+            printf("addition = %d\n", a+b);
+            break;
+        case 2 :
+            printf("subtraction = %d\n", a-b);
+            break;
+        case 3 :
+            printf("multiplication = %d\n", a*b);
+            break;
+        case 4 :
+            printf("division = %d\n", a/b);
+            break;
+        case 5 : 
+            printf("modulas = %d\n", a%b);
+        default :
+            printf("invalid choice\n");
+            break;
+    }
+    return 0; 
+}
+
+/*
+task :2  ask user to enter the  number and  print  month name  and  its days. but  if user enter a number 2 then  ask user to enter the  year and check if  it is leap year then print 29 days  not  then 28 days. 
+
+input  : 1   ==> jan   ==>31 days 
+         2   ==> enter the year   ==> 2024  ==> LP  ==> 29 days 
+         12  ==> dec   ==>31 days 
+
+         hint  : 
+            case 2 : 
+                printf()   scanf()   if  ()   else   
+*/
