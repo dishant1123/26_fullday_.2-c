@@ -105,7 +105,7 @@ twin  number  in range
 pelindrome  number  in range
 strong  number  in range
 harshard  number  in range
-reverse  number  in range
+reverse  number  in range  
 */
 
 // amg in range  : 
