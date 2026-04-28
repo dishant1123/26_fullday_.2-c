@@ -130,25 +130,80 @@ int  main()
 // ask user  to enter the  number  and  print  n natural  number  sum. 
 
 // input  : 5   ===> 1+2+3+4+5 =15 
-
+/*
 #include <stdio.h>
 int  main()
 {
-    int  num,i,sum =0; 
+    int  num,i,evensum =0,oddsum=0; 
     printf("enter the number : ");
-    scanf("%d",&num); // 4 
-    for(i=1; i<=num; i++) // i =5  5<=4 
+    scanf("%d",&num); // 10 
+    for(i=1; i<=num; i++) // i =1  1<=10  
     {
-        sum =sum +i;   // sum = 10 
-
+        if(i % 2==0)
+        {
+            evensum = evensum + i;
+        }
+        else 
+        {
+            oddsum = oddsum + i;
+        }
     }
-    printf("sum = %d\n",sum);
+    printf("even sum = %d\n",evensum);
+    printf("odd sum = %d\n",oddsum);
     return 0; 
 }
-
+*/ 
 // task :2 ask user  to enter the  number  and  print  odd  even  sum. 
 /*
     input  : 10 
         even  : 2+4+6+8+10 = 30 
         odd  : 1+3+5+7+9  =25 
+*/
+
+// task  :3 ask user to enter the  number  and  print  factorial  of  this  number.
+
+/*
+    input  : 5    ===> 1*2*3*4*5 =120 
+    input  : 6   ===> 1*2*3*4*5*6 =720 
+*/
+
+// prime number  : 
+/*
+prime   ==> 2 factors   ==>  1 ,number itself 
+
+6 factors  : 1,2,3,6  ==> not  prime 
+7 factors  : 1,7   ==> prime  
+33 factors  :1,3,11,33  ==> not  
+2  ==> prime
+*/
+
+#include <stdio.h>
+int main()
+{
+    int num,i,count =0;
+    printf("enter the  number  : ");
+    scanf("%d",&num); //5 
+    for(i=1; i<=num; i++) // i=6  6<=5 
+    {
+        if(num % i ==0) // 5 % 5  ==0 
+        {
+            count ++;  // 2
+        }
+    } // i  loop end 
+    if(count ==2) // 2 == 2 
+    {
+        printf("prime number \n");
+    }
+    else 
+    {
+        printf("not prime number \n");
+    }
+    return 0 ; 
+}
+
+// perfect number  : 
+/*
+6 factors : 1,2,3,6   ==> sum = 1+2+3 =6  
+28 factors  :1,2,4,7,14,28  ==> sum = 1+2+4+7+14 =28 
+100 factors  :1,2 ,4,5,10 ,20,25,50 ,100 ==> sum = 1+2+4+5+10+20+25+50 ==> not perfect   
 */
