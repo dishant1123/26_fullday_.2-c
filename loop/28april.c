@@ -101,3 +101,9 @@ int  main()
     return 0; 
 
 }
+/*
+A number is said to be a Disarium number when the sum of its digit raised to the power of their respective positions 
+becomes equal to the number itself.
+For example, 175 is a Disarium number as follows:
+1^1+ 7^2 + 5^3 = 1+ 49 + 125 = 175
+*/
