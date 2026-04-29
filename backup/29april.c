@@ -94,7 +94,7 @@ amg :
     num = num /10 ; ==> 16 /10 =0 
 
 */
-
+/*
 #include <stdio.h>
 #include <math.h>
 int  main()
@@ -105,7 +105,7 @@ int  main()
     scanf("%d",&num); //1634
 
     temp = num;   // temp =1634 
-    for(;temp >0; )
+    for(;temp >0; ) 
     {
         temp = temp /10 ; 
         count ++;    // 4    temp = 0 
@@ -124,3 +124,30 @@ int  main()
     }
     return 0; 
 }
+*/
+/*
+A Harshad number (or Niven number) is an integer that is divisible by the sum of its digits, typically in base 10
+example: 
+number=18 
+sum=8+1=9
+18%9=0
+this is harshad number
+
+=======    
+input  : 21   ===> each digit  sum= 2+1 =3
+                    num % sum ==0    ===> 21 % 3 ==0  ===> harshad number
+*/
+
+/*
+strong  number  : 
+    145  
+    each digit  factorial : 1   4   5 
+                            1   24   120
+    sum = 1+24+120  = 145 
+
+    for()
+    {
+
+        for()
+    }
+*/
