@@ -37,3 +37,5 @@ int  main()
     }
     return 0; 
 }
+
+// task  : 1 ask user  to enter the  start  and end number  print disarium number between start and end range.

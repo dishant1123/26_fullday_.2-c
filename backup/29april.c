@@ -138,17 +138,4 @@ input  : 21   ===> each digit  sum= 2+1 =3
                     num % sum ==0    ===> 21 % 3 ==0  ===> harshad number
 */
 
-/*
-strong  number  : 
-    145  
-    each digit  factorial : 1   4   5 
-                            1   24   120
-    sum = 1+24+120  = 145 
-
-    for()
-    {
-
-        for()
-    }
-*/
 
