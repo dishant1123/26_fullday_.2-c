@@ -120,7 +120,7 @@ int  main()
 1 4 9 16 25  25            25 25 25 25 25    a b c d e
 
 */
-
+/*
 #include <stdio.h>
 int  main()
 {
@@ -135,3 +135,32 @@ int  main()
     }  // i  loop  end 
     return 0; 
 }
+*/ 
+// ex :12 
+
+#include <stdio.h>
+int  main()
+{
+    int i,j; 
+    for(i=1; i<=5; i++)  // 4  4 <=5 
+    {
+        char ch ='a';   // ch ='a'
+        for(j=1; j<=i; j++) // 1  1 <=4 
+        {
+            printf("%c ",ch); // a  
+            ch++;              //a b
+        }                     // a b c   
+        printf("\n");        // 
+    }
+    return 0; 
+}
+/*
+13.          14. 
+
+e d c b a    1 
+e d c b      1 0 
+e d c        1 0 1
+e d          1 0 1 0
+e            1 0 1 0 1
+
+*/
