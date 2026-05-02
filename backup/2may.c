@@ -62,3 +62,68 @@ int main()
 
     sum == mul  ===> twin number  
 */
+/*
+#include <stdio.h>
+int  main()
+{
+    int num, r, sum =0, mul=1 ; 
+    printf("enter the number : ");
+    scanf("%d",&num); //123
+
+    for(; num > 0;) //0 > 0 
+    {
+        r = num %10;  // r =1 %10 =1 
+        sum =sum +r;  // sum = 6
+        mul = mul *r; // mul =6
+        num = num /10;  // num =1/10=0
+    }
+    if(sum == mul)
+    {
+        printf("twin number \n");
+    }
+    return 0; 
+}
+*/
+// armstrong number :
+
+/*
+input  :153   ==> digit :3 
+each digit cube : 1**3 5**3 3**3
+                1    125   27
+sum = 1+125+27 = 153
+
+1634 : 4 digit 
+each digit power : 1**4 6**4 3**4 4**4
+                 1    1296   81     256
+sum = 1+1296+81+256 = 1634
+*/
+
+#include<stdio.h>
+#include<math.h>
+int  main()
+{
+    int num,r,temp,sum=0,count=0; 
+    printf("enter the number : ");
+    scanf("%d",&num); //1634
+
+    temp = num;   // temp =1634 
+     // how  many digit of  number  : 
+    for(;temp > 0; )  // 0 > 0 
+    {
+        temp = temp /10;  // temp =1 /10 =0 
+        count ++;  // count =4 
+    }
+    temp = num;  // temp =1634 
+
+    for(;temp >0;) // 0 > 0 
+    {
+        r= temp % 10;  // r =1 %10 =1 
+        sum = sum + pow(r,count); // sum = 1634  
+        temp = temp /10 ;   // temp = 1 /10 =0 
+    }
+    if(sum == num)
+    {
+        printf("armstrong number \n");
+    }
+    return 0 ;
+}
