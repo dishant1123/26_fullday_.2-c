@@ -72,7 +72,7 @@ int  main()
     return 0; 
 }
 */ 
-
+/*
 #include <stdio.h>
 int  main()
 {
@@ -86,4 +86,62 @@ int  main()
         printf("\n");    //  
     }
     return 0; 
+}
+*/
+/*
+
+5 4 3 2 1 
+5 4 3 2 
+5 4 3 
+5 4 
+5
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int i,j; 
+    for(i=1; i<=5; i++)
+    {
+        for(j=5; j>=i; j--)
+        {
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+    return 0; 
+}
+*/ 
+/*
+5 5 5 5 5    1 1 1 1 1
+4 4 4 4      2 2 2 2
+3 3 3        3 3 3
+2 2          4 4 
+1            5 
+*/
+
+/*
+a             e d c b a    a b c d e 
+a b           e d c b      a b c d 
+a b c         e d c        a b c
+a b c d       e d          a b
+a b c d e     e            a
+*/
+
+#include <stdio.h>
+int main()
+{
+    int i,j; 
+    char ch ;  
+    for(i=1; i<=5; i++) // 3   3<=5 
+    {   
+        ch ='a';   // a  
+        for(j=1; j<=i; j++) // 2   2 <=2 
+        {
+            printf("%c ",ch);  //a  
+            ch++;   // b      // a b
+        }
+        printf("\n");
+    }
+    
 }
