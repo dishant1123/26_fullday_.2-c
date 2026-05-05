@@ -127,7 +127,7 @@ a b c         e d c        a b c        d e f
 a b c d       e d          a b          g h i j
 a b c d e     e            a            k l m n o 
 */
-
+/*
 #include <stdio.h>
 int main()
 {
@@ -145,7 +145,7 @@ int main()
     }
     return 0 ; 
 }
-
+*/
 /* 
 1             25 16 9 4 1     1 4 9 16 25 
 1 4           25 16 9 4       1 4 9 16
@@ -154,3 +154,4 @@ int main()
 1 4 9 16 25   25              1
 
 */
+
