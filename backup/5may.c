@@ -121,11 +121,11 @@ int main()
 */
 
 /*
-a             e d c b a    a b c d e 
-a b           e d c b      a b c d 
-a b c         e d c        a b c
-a b c d       e d          a b
-a b c d e     e            a
+a             e d c b a    a b c d e    a 
+a b           e d c b      a b c d      b c  
+a b c         e d c        a b c        d e f  
+a b c d       e d          a b          g h i j
+a b c d e     e            a            k l m n o 
 */
 
 #include <stdio.h>
@@ -143,5 +143,14 @@ int main()
         }
         printf("\n");
     }
-    
+    return 0 ; 
 }
+
+/* 
+1             25 16 9 4 1     1 4 9 16 25 
+1 4           25 16 9 4       1 4 9 16
+1 4 9         25 16 9         1 4 9 
+1 4 9 16      25 16           1 4 
+1 4 9 16 25   25              1
+
+*/
