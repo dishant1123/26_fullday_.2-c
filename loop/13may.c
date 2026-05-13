@@ -94,7 +94,7 @@ int main()
 // prime  twin rev pelindrome  dia harshard amg perfect strong  
 
 // dia :  175   ===> 1 power 1 ==> 1     7 power 2 ==>49   5 power 3 == >125   sum =175  
-
+/*
 #include<stdio.h>
 #include<math.h>
 int  main()
@@ -127,6 +127,33 @@ int  main()
     }
     return 0; 
 }
+*/ 
 
+// fibonacci seris : sum  of  tow preceding  1  and start  with  0 and 1 ; 
 
-// fibonacci seris :
+/*
+
+0 , 1 , 1 ,  2  , 3  5  8  13  21 
+*/
+
+#include<stdio.h>
+int main()
+{
+    int first =0 , second =1 ,next ,num,i; 
+    printf("enter the  number  : "); 
+    scanf("%d",&num);  // 10 
+
+    printf("fibonacci series :  \n");
+
+    for(i=1; i<=num; i++) // 5 5  <=10 
+    {
+        printf("%d\t",first);  // 0  1  1  2   3 
+        next = first + second; // next = 3    
+        first = second; // first = 3
+        second = next;  // second =3   
+    }
+    return 0 ; 
+
+}    
+
+// while   : 
