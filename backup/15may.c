@@ -99,6 +99,7 @@ int  main()
 */
 
 // ex :7 ask user to  enter the number  and  print n natural number  sum. 
+/*
 #include <stdio.h>
 int  main()
 {
@@ -113,11 +114,57 @@ int  main()
     // printf("sum is : %d\n",sum);
     return 0;
 }
-
+*/ 
 // ex :8 ask user to  enter the number  and  print n natural number  of  odd sum  and even number sum. 
 
 /*
     input  : 10 
     odd number  sum  : 1 3 5 7 9  ===> 25 
     even number  sum  : 2 4 6 8 10  ===> 30
+*/
+
+// ex : 9 prime number  : 
+/*
+2 factors  : 1 , number it self 
+
+ex :4  ===>1,2,4 ===> not  
+    5  ===> 1,5  
+*/
+
+#include <stdio.h>
+int  main()
+{
+    int num, i,count=0; 
+    printf("enter the number  : \n");
+    scanf("%d",&num); // 3 
+
+    for(i=1; i<=num; i++) // 4  4<=3 
+    {
+        if(num % i ==0) // 3  % 3 ==0 
+        {
+            count ++; // 2
+        }
+    }
+    if(count ==2)  //  2==2 
+    {
+        printf("prime");
+    }
+    else 
+    {
+        printf("not prime");
+    }
+    return 0 ;
+}
+
+//ex :10 perfect number  
+/*
+    6 factors  : 1,2,3,6  
+    sum = 1+2+3 =6    ===> perfect 
+
+    28 factors  : 1,2,4,7,14,28 
+    sum = 1+2+4+7+14  = 28  ===> perfect
+
+    10 factors  : 1,2,5,10 
+    sum = 1+2+5 = 8  not perfect 
+    
 */
