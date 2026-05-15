@@ -41,6 +41,7 @@ int  main()
 */ 
 // ex :2 
 
+/*
 #include <stdio.h>
 int main()
 {
@@ -52,11 +53,43 @@ int main()
     }
     return 0 ;
 }
+*/
 
 /* task :1 take a one  int  type  array and separate  odd and even element  and print  them .
     input  : int  a[5] = {1,45,67,80,90}
 
     odd element is  : 1,45,67 
     even element is : 80,90
+
+*/
+
+// ex :3 scan the array element   and  print them. 
+
+#include <stdio.h>
+int  main()
+{
+        int a[5]; 
+        for(int i=0; i<=4; i++)
+        {
+            printf("enter the  element  :"); 
+            scanf("%d",&a[i]);
+        }
+        printf("array element is  :  \n");
+
+        for(int i=0; i<=4; i++)
+        {
+            printf("%d element is  : %d \n",i,a[i]);
+        }
+        return 0; 
+}
+
+/*
+task  :2 ask user to enter the  array element  is  print  sum  of them and also  print oddsum and evensum array  element . 
+
+input : int a[5] ={1,2,3,4,5}
+
+output  : sum  of  array  element  is  : 15
+oddsum  : 9 
+evensum : 6
 
 */
