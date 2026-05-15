@@ -75,7 +75,6 @@ int  main()
             scanf("%d",&a[i]);
         }
         printf("array element is  :  \n");
-
         for(int i=0; i<=4; i++)
         {
             printf("%d element is  : %d \n",i,a[i]);
@@ -85,9 +84,7 @@ int  main()
 
 /*
 task  :2 ask user to enter the  array element  is  print  sum  of them and also  print oddsum and evensum array  element . 
-
 input : int a[5] ={1,2,3,4,5}
-
 output  : sum  of  array  element  is  : 15
 oddsum  : 9 
 evensum : 6
